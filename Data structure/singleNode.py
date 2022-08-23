@@ -97,6 +97,16 @@ class SingleList(SingleNode):
             cur = cur.next
            
             return False
+    def printall(self):
+        '''打印整个链表'''
+        cur = self._head
+        if cur:
+            print(f"{cur.item}",end="")
+            cur = cur.next
+        while cur:
+            print(f"->{cur.item}",end="")
+            cur = cur.next 
+        print("\n",flush=True)
         
 if __name__ == '__main__':
     l = SingleList()
@@ -104,4 +114,4 @@ if __name__ == '__main__':
         l.add(i)
     l.append(4)
     print(l.length())
-    print(l.travel())
+    l.printall()
