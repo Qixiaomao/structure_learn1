@@ -104,3 +104,19 @@ class SinCyclinkedlist(object):
             else:
                 # 链表只有一个节点
                 self._head = None
+        else:
+            pre = self._head
+            # 第一个节点不是要删除德
+            while cur.next != self._head:
+                # 找到了要删除的元素
+                if cur.item == item:
+                    # 删除
+                    pre.next = cur.next
+                    return
+                else:
+                    pre = cur
+                    cur = cur.next
+            # cur指向尾节点
+            if cur.item == item:
+                # 尾部删除
+                pre.next = cur.next
