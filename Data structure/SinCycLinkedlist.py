@@ -120,3 +120,34 @@ class SinCyclinkedlist(object):
             if cur.item == item:
                 # 尾部删除
                 pre.next = cur.next
+    
+    def search(self,item):
+        '''查找节点是否存在'''
+        if self.is_empty():
+            return False
+        cur = self._head
+        if cur.item == item:
+            return True
+        while cur.next != self._head:
+            cur = cur.next
+            if cur.item == item:
+                return True
+        return False
+    
+    def printall(self):
+        '''打印整个链表'''
+        cur = self._head
+        if cur:
+            print(f"{cur.item}",end="")
+            cur = cur.next
+        while cur:
+            print(f"->{cur.item}",end="")
+            cur = cur.next 
+        print("\n",flush=True)
+        
+if __name__ == "__main__":
+    l = SinCyclinkedlist()
+    for i in range(1,5):
+        l.append(i)
+    l.insert(2,4)
+    l.travel()
