@@ -91,4 +91,16 @@ class SinCyclinkedlist(object):
             return
         cur = self._head
         pre = None
-        
+        # 若头节点的元素就是要查找的元素item
+        if cur.item == item:
+            # 如果链表不止一个节点
+            if cur.next != self._head:
+                # 先找尾节点，将尾节点的next指向第二个节点
+                while cur.next != self._head:
+                    cur = cur.next
+                # cur指向了尾节点
+                cur.next = self._head.next
+                self._head = self._head.next
+            else:
+                # 链表只有一个节点
+                self._head = None
