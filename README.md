@@ -1,8 +1,8 @@
 # structure_learn1
 
-## Data Structure : 根据重温的《大话数据结构》将有关的数据结构与算法都用python实现一遍 🔭
-## Desigh Pattern : 主要就设计思想进行学习小结；
-## 代码随想录 ：总结一些自己对于该题型的解法以及思考；
+* Data Structure : 根据重温的《大话数据结构》将有关的数据结构与算法都用python实现一遍 🔭
+* Desigh Pattern : 主要就设计思想进行学习小结；
+* 代码随想录 ：总结一些自己对于该题型的解法以及思考；
 
 <!--
 ### Hi there 👋
