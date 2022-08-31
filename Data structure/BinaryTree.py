@@ -76,7 +76,26 @@ class Tree(object):
             if node.rchild != None:
                 queue.append(node.rchild)
         
-        
+        # result = []
+        # st = []
+        # if root != None:
+        #     st.append(root)
+        # while st:
+        #    node = st.pop()
+        #    if node != None:
+                
+        #         st.append(node)#中
+        #         st.append(None)
+        #         if node.right:
+        #             st.append(node.right) #右边
+        #         if node.left:
+        #             st.append(node.left) #左边
+        #    else:
+        #         node = st.pop()
+        #         st.append(node.val)
+        # return result
+
+            
     
     
                     
