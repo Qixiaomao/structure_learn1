@@ -101,8 +101,8 @@ class SingleList(SingleNode):
         '''打印整个链表'''
         cur = self._head
         if cur:
-            print(f"{cur.item}",end="")
-            cur = cur.next
+             print(f"{cur.item}",end="")
+             cur = cur.next
         while cur:
             print(f"->{cur.item}",end="")
             cur = cur.next 
